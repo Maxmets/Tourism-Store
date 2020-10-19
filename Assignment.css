@@ -1,0 +1,391 @@
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+    .name {
+        color: darkslategrey;
+    }
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(255, 225, 187);
+}
+
+h1 {
+    text-align: center;
+}
+
+.selectionContainer{
+    text-indent: 2em;
+}
+
+#container {
+    margin: 2% 5% 2% 5%;
+    padding: 2% 5% 0 5%;
+    background-color: rgba(0, 169, 247, 0.507);
+}
+
+#ImageSection {
+    text-align: center;
+}
+
+.reviewText {
+    text-indent: 2em;
+}
+
+.reviewHR {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #000000;
+    margin: 0.25em 1.0em;
+}
+
+.name {
+    color: #000000;
+}
+
+#slide {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+#slide:hover {
+    top: -10px;
+}
+
+.container {
+    box-shadow: 0 6px 8px rgba(3, 0, 0, 0.5);
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgba(0, 169, 247, 0.507);
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.title {
+    font-weight: bold; 
+    font-size: 70px;
+    text-align: center;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none !important;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    /* background-color: inherit; */
+    background-color: #333;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a gray background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+    color: white !important;
+    display: block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.29);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a, .dropdown-content div {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: fixed;
+}
+
+
+.navbar .search-container {
+    float: right;
+}
+
+.navbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.navbar .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+    background: #ccc;
+}
+
+/* When the screen is less than 850px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 850px) {
+    .navbar .search-container {
+        float: none;
+    }
+    .navbar a, .navbar input[type=text], .navbar .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .navbar input[type=text] {
+        border: 1px solid #ccc;  
+    }
+
+    .mainAttractionContainer{
+        width: 40%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: block;
+    }
+}
+
+figure {
+    background-color: rgba(0, 169, 247, 0.507);
+}
+
+.attractionContainer{
+    width: 30%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 0%;
+    display: inline-flex;
+}
+
+.attractionFigure {
+    padding: 2%;
+    box-shadow: 0 6px 8px rgba(3, 0, 0, 0.5);
+}
+
+.attractionImage {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.mainAttractionContainer{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    display: block;
+}
+
+.mainAttractionFigure {
+    padding: 2%;
+    box-shadow: 0 6px 8px rgba(3, 0, 0, 0.5);
+}
+
+.mainAttractionImage {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.imageContainer {
+    box-shadow: 0 6px 8px rgba(3, 0, 0, 0.5);
+}
+
+.image {
+    box-shadow: 0 6px 8px rgba(3, 0, 0, 0.5);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.plansContainer{
+    background-color: rgba(0, 169, 247, 0.507);
+    border: 1px solid black;
+    box-shadow: 0 6px 8px rgba(3, 0, 0, 0.5);
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.invoice{
+    display: none;
+    background-color: rgba(0, 169, 247, 0.507);
+    border: 1px solid black;
+    box-shadow: 0 6px 8px rgba(3, 0, 0, 0.5);
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#respond {
+    margin-top: 40px;
+}
+
+#respond textarea {
+    background-color: rgba(0, 169, 247, 0.257);
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+  
+    line-height: 1.4em;
+}
+
+#userID, #attID {
+    display: none;
+}
+
+.rating {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.rating:not(:checked) > input {
+    position: fixed;
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #ffc700;    
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+#gotoLogin 
+{
+    color: #333;
+}
+
+.stars-outer {
+    display: inline-block;
+    position: relative;
+    font-family: FontAwesome;
+    font-size: 40px;
+}
+
+.stars-outer::before {
+    content: "☆☆☆☆☆";
+}
+
+.stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 40px;
+}
+
+.stars-inner::before {
+    content: "★★★★★";
+    color: #f8ce0b;
+}
